@@ -1,50 +1,82 @@
-# Welcome to your Expo app 👋
+# 🧊 Liquid Glass Animation with React Native
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This project is an **animation exercise** built with **React Native**, using `react-native-reanimated` and `expo-blur`. It demonstrates how to create **floating glass-like buttons** that adapt to scroll position and background, mimicking a **liquid glass (glassmorphism)** effect.
 
-## Get started
+It works **on both Android and iOS**, thanks to Expo's cross-platform support.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## ✨ Features
 
-2. Start the app
+- 📜 Scrollable list with randomly colored items
+- 🌀 Animated floating buttons using `Reanimated` (`withSpring`, `withTiming`)
+- 💎 Glass effect with `BlurView` that reacts to theme and motion
+- 🎨 Adaptive text and background colors depending on scroll position
+- ⚡ Performance-optimized with `useDerivedValue`, `interpolateColor`, and shared values
+- 🧩 Modular `GlassButton` component for reuse and clarity
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 📱 Preview
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+| iOS Liquid Glass Buttons  | Android Liquid Glass Buttons |
+|--------------------------|----------------------|
+| ![](./assets/iOS.gif) | ![](./assets/Android.gif) |
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 🚀 Getting Started
 
-When you're ready, run:
+### 1. Clone the repository
 
 ```bash
-npm run reset-project
+git clone https://github.com/your-user/liquid-glass-animation.git
+cd liquid-glass-animation
+```
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+3. Run with Expo
+```bash
+expo start
+```
+⚠️ This example requires a device or emulator that supports BlurView. It works on both Android and iOS.
+
+🛠 Tech Stack
+
+* React Native
+* Expo
+* Reanimated
+* expo-blur
+* TypeScript
+
+## 📂 Folder Structure
+
+```bash
+Copiar
+Editar
+/components
+  └── GlassButton.tsx    # Reusable animated button
+App.tsx                  # Main app logic
+assets/                  # Screenshots or GIFs
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🧪 Concepts Demonstrated
+* Animated layout transformations using shared values
+* Responsive UI with visual feedback
+* Interpolated blur and color effects
+* Glassmorphism adapted to background theme (light/dark)
 
-## Learn more
+## 🎯 Inspiration
 
-To learn more about developing your project with Expo, look at the following resources:
+This app mimics the liquid glass effect often seen in iOS/macOS UI — where surfaces blur and respond dynamically to content and motion.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 👨‍💻 Author
 
-## Join the community
+Built by Ignacio Castro
 
-Join our community of developers creating universal apps.
+If you like this, ⭐️ star the repo and feel free to fork for your own UI experiments!
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
